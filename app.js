@@ -9,23 +9,23 @@ function definirRotas($routeProvider, $locationProvider) {
     $routeProvider.
 
     when('/', {
-        controller: 'BlogController',
-        templateUrl: 'conteudo-HTML-tpl.html'
+        controller: 'BlogControllerHTML',
+        templateUrl: 'conteudo-HTML.tpl.html'
     }).
 
     when('/html', {
-        controller: 'BlogController',
-        templateUrl: 'conteudo-HTML-tpl.html'
+        controller: 'BlogControllerHTML',
+        templateUrl: 'conteudo-HTML.tpl.html'
     }).
 
     when('/css', {
-        controller: 'BlogController',
-        templateUrl: 'conteudo-CSS-tpl.html'
+        controller: 'BlogControllerCSS',
+        templateUrl: 'conteudo-CSS.tpl.html'
     }).
 
     when('/javascript', {
-        controller: 'BlogController',
-        templateUrl: 'conteudo-Javascript-tpl.html'
+        controller: 'BlogControllerJS',
+        templateUrl: 'conteudo-Javascript.tpl.html'
     }).
 
     otherwise({ redirectTo: '/' });
